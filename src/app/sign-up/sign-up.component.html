@@ -5,16 +5,25 @@
             <input type="text" placeholder="email address" required />
             <input type="password" placeholder="password" required />
             <input type="password" placeholder="confirm password" required />
-            
-<div class="choice"  style="float: left;">
-                <input type="radio" id="recruter" name="job">
-                <label for="recruter">recruter</label>
-          </div>
-             <div class="choice" style="float: right;">
+            <div>
+
                 
-                <input type="radio" id="candidate" name="job">
-                <label for="candidate">candidate</label>
-</div>            
+              
+                <label class="rad-label">
+                  <input type="radio" class="rad-input" name="job">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">recruter</div>
+                </label>
+              
+               
+                <label class="rad-label">
+                  <input type="radio" class="rad-input" name="job">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">applicant</div>
+                </label>
+              
+              </div>
+                 
             <button>create</button>
             <p class="message">Already registered?
                 <a routerLink="/login">Sign In</a>
